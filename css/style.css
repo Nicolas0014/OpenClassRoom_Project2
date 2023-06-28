@@ -71,11 +71,9 @@ body {
     height: 19px;
 }
 
-.button-header{
+.links-header{
     width : 113px;
     height: 35px;
-    border: none;
-    background: none;
     border-top: solid 1px blue;
 }
 
@@ -83,6 +81,7 @@ body {
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
+    margin-top: 33px;;
 }
 
 .hebergements-and-populaires section {
@@ -124,7 +123,7 @@ body {
 
 .hebergements-cards .card-content {
     width: 100%;
-    padding-left: 15px;
+    padding-left: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -197,6 +196,53 @@ body {
     margin-bottom: 5px;
 }
 
+/****** Activités ***********/
+.activites {
+    width: 100%;
+    margin-top: 33px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.activites-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.activites-cards {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 0 30px;
+}
+
+.activites-cards .card {
+    width: 23.3%;
+    margin-top: 33px;
+    padding: 0;
+}
+
+.activites-cards img {
+    width: 100%;
+    height: 380px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.activites-cards .card-content {
+    width: 67%;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.activites-cards .card-title {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left :19px;
+}
 
 
 
