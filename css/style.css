@@ -56,9 +56,23 @@ body {
 
 /****** Header ***********/
 
+.menu {
+    display: flex;
+    width: 344px;
+    height: 35px;
+    justify-content: space-evenly;
+    gap: 68px;
+}
+
+.menu li{
+    list-style-type: none;
+}
+
+
 .booki-header{
     display: flex;
     justify-content: space-between;
+    height: 79px;
 }
 
 .logo-container{
@@ -72,12 +86,26 @@ body {
 }
 
 .links-header{
-    width : 113px;
-    height: 35px;
-    border-top: solid 1px blue;
+    color : #0065FC;
+    padding-top: 16px;
+    font-size: 16px;
+    font-weight: 400;
+    border-top: solid 2px #0065FC;
+}
+
+/****** Research and Filters ***********/
+
+.research-and-filters{
+    margin-top: 33px;
+}
+
+.research-and-filters h1{
+        font-size: 22px;
+        font-weight: 700;
 }
 
 /****** Hebergements And Populaires ***********/
+
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
@@ -197,6 +225,7 @@ body {
 }
 
 /****** Activités ***********/
+
 .activites {
     width: 100%;
     margin-top: 33px;
@@ -244,6 +273,32 @@ body {
     margin-left :19px;
 }
 
+/****** Footer ***********/
+
+.booki-footer{
+    display: flex;
+    gap: 30px;
+    margin-top: 33px;
+    padding: 30px;
+    background-color: #F2F2F2;
+}
+
+.column-footer{
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.column-footer li{
+    list-style-type: none;
+}
+
+.column-title{
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0;
+}
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
