@@ -19,6 +19,7 @@ body {
     margin: 0;
 }
 
+
 .main-container {
     width: 100%;
     max-width: 1440px;
@@ -54,6 +55,10 @@ body {
     color: var(--main-bg-color)
 }
 
+.neutralLocation {
+    color: black;
+}
+
 /****** Header ***********/
 
 .menu {
@@ -86,11 +91,11 @@ body {
 }
 
 .links-header{
-    color : #0065FC;
+    color : var(--main-color);
     padding-top: 16px;
     font-size: 16px;
     font-weight: 400;
-    border-top: solid 2px #0065FC;
+    border-top: solid 2px var(--main-color);
 }
 
 /****** Research and Filters ***********/
@@ -113,14 +118,14 @@ body {
 .research{
     display: flex;
     margin-top: 35px;
-    border: solid 1px #F2F2F2;
+    border: solid 1px var(--main-bg-color);
     border-radius: 15px;
     width: 377px;
     height: 50px;
 }
 
 .research-icon{
-    background-color: #F2F2F2;
+    background-color: var(--main-bg-color);
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
     width: 13.5%;
@@ -138,7 +143,7 @@ body {
 }
 
 .research button {
-    background-color: #0065FC;
+    background-color: var(--main-color);
     width: 35.7%;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
@@ -157,7 +162,7 @@ body {
 }
 
 .filters-button{
-    border : 2px solid #F2F2F2;
+    border : 2px solid var(--main-bg-color);
     background: none;
     padding: 4px 19px;
     border-radius: 25px;
@@ -184,6 +189,16 @@ body {
 
 .infobar-content{
     margin: 0;
+}
+
+.infobar-icon-border {
+    width: 24px;
+    height: 24px;
+    border: solid 1px var(--main-bg-color);
+    border-radius: 15px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
 }
 
 /****** Hebergements And Populaires ***********/
