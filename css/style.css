@@ -60,6 +60,18 @@ body {
     color: black;
 }
 
+.white-glass{
+    color: white;
+}
+
+.only-mobile{
+    display: none;
+}
+
+.only-desktop{
+    display: flex;
+}
+
 /****** Header ***********/
 
 .menu {
@@ -76,14 +88,13 @@ body {
 
 .menu a{
     text-decoration: none;
-    color: var(--main-color);
+    color: black;
     cursor: pointer;
 }
 
 .booki-header{
     display: flex;
     justify-content: space-between;
-    height: 79px;
 }
 
 .logo-container{
@@ -98,11 +109,17 @@ body {
 }
 
 .links-header{
-    color : var(--main-color);
     padding-top: 16px;
     font-size: 16px;
     font-weight: 400;
+}
+
+.selected{
     border-top: solid 2px var(--main-color);
+}
+
+.selected a{
+    color: var(--main-color);
 }
 
 /****** Research and Filters ***********/
@@ -123,7 +140,6 @@ body {
 
 
 .research{
-    display: flex;
     margin-top: 35px;
     border: solid 1px var(--main-bg-color);
     border-radius: 15px;
@@ -165,13 +181,18 @@ body {
 .filters{
     display: flex;
     gap: 15px;
-    height: 50px;
     margin-top: 35px;
 }
 
-.filters-button{
+.filters-buttons{
+    display: flex;
+    gap: 15px;
+}
+
+.button-content{
     border : 2px solid var(--main-bg-color);
     background: none;
+    height: 38px;
     padding: 4px 19px;
     border-radius: 25px;
     font-size: 17px;
@@ -182,7 +203,7 @@ body {
     cursor: pointer;
 }
 
-.filters-button:hover{
+.button-content:hover{
     background-color: var(--filter-bg-color);
 }
 
@@ -283,7 +304,8 @@ body {
 }
 
 .show-more{
-    font-weight: bold;
+    font-size: 18px;
+    font-weight: 700;
     text-align: left;
     margin-top: 30px;
     margin-bottom: 0;
@@ -378,9 +400,8 @@ body {
 }
 
 .activites-cards .card-title {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left :19px;
+    margin: 0;
+    padding: 20px 19px;
 }
 
 /****** Footer ***********/
@@ -451,9 +472,144 @@ body {
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+
+    .activites-cards img {
+        height: 200px;
+    }
+
+    .filters{
+        flex-direction: column;
+        gap: 0;
+    }
 }
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+
+    .only-mobile{
+        display: flex;
+    }
+
+    .only-desktop{
+        display: none;
+    }
+
+    .booki-header{
+        flex-direction: column;
+    }
+
+    .menu{
+        width: 100%;
+        gap: 0;
+    }
+
+    .menu li {
+        text-align: center;
+    }
+
+    .links-header{
+        width: 50%;
+        padding-top: 0;
+        padding-bottom: 16px;
+        border-bottom: solid 2px var(--main-bg-color);
+    }
+
+    .selected{
+        border-top: none;
+        border-bottom: solid 2px var(--main-color);
+    }
+
+    .logo-container{
+        text-align: center;
+    }
+
+    .main-container{
+        padding: 0;
+    }
+
+    .research-and-filters{
+        padding: 0 20px;
+    }
+
+    .research{
+        margin: auto;
+        margin-top: 35px;
+        width: auto;
+    }
+
+    .research-icon{
+        width: 13.3%;
+    }
+
+    .research input{
+        width: 73.4%;
+    }
+
+    .research button{
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+        padding: 0;
+        width: 13.3%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .filters-buttons{
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .button-content{
+        width: 120.5px;
+    }
+
+    .hebergements-and-populaires section {
+        border-radius: 0;
+    }
+
+    .hebergements-and-populaires section.hebergements{
+        background-color: white;
+    }
+
+    .hebergements-cards{
+        flex-direction: column;
+    }
+
+    .hebergements-cards .card{
+        width: 100%;
+    }
+
+    .populaires{
+        order: -1;
+        margin-top: 0;
+    }
+    
+    .populaires-cards{
+        flex-direction: column;
+    }
+
+    .populaires-cards .card{
+        width: 100%;
+    }
+
+    .activites-cards{
+        flex-direction: column;
+    }
+
+    .activites-cards .card{
+        width: 100%;
+    }
+
+    .activites-cards img{
+        height: 141px;
+    }
+
+    .booki-footer{
+        flex-direction: column;
+    }
+
+    .column-footer{
+        width: 100%;
+    }
 }

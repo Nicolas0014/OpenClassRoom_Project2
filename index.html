@@ -22,7 +22,7 @@
                 <img src="images/logo/Booki.png" alt="Logo de Booki">
             </div>
             <nav class="menu">
-                <li class="links-header"><a href="#hebergement">Hébergements</a></li>
+                <li class="links-header selected"><a href="#hebergement">Hébergements</a></li>
                 <li class="links-header"><a href="#activites">Activités</a></li>
             </nav>
         </header>
@@ -30,30 +30,39 @@
             <div class="research-and-filters">
                 <h1 class="research-and-filters-title">Trouvez votre hébergement pour des vacances de rêves</h1>
                 <p class="research-and-filters-subtitle">En plein centre-ville ou en pleine nature</p>
-                <form class="research">
+                <form class="only-desktop research">
                     <div class="research-icon">
                         <i class="fa-solid fa-location-dot neutralLocation" aria-hidden="true"></i>
                     </div>
                     <input placeholder="Marseille, France">
                     <button>Rechercher</button>
                 </form>
+                <form class="only-mobile research">
+                    <div class="research-icon">
+                        <i class="fa-solid fa-location-dot neutralLocation" aria-hidden="true"></i>
+                    </div>
+                    <input placeholder="Marseille, France">
+                    <button><i class="fa-solid fa-magnifying-glass white-glass"></i></button>
+                </form>
                 <div class="filters">
                     <p class="filters-title">Filtres</p>
-                    <div class="filters-button">
-                        <i class="fa-xs fa-solid fa-money-bill-wave" aria-hidden="true"></i>
-                        <span>Économique</span>
-                    </div>
-                    <div class="filters-button">
-                        <i class="fa-solid fa-person" aria-hidden="true"></i>
-                        <span>Familial</span>
-                    </div>
-                    <div class="filters-button">
-                        <i class="fa-xs fa-solid fa-heart" aria-hidden="true"></i>
-                        <span>Romantique</span>
-                    </div>
-                    <div class="filters-button">
-                        <i class="fa-xs fa-solid fa-fire" aria-hidden="true"></i>
-                        <span>Nos pépites</span>
+                    <div class="filters-buttons">
+                        <div class="button-content">
+                            <i class="fa-xs fa-solid fa-money-bill-wave" aria-hidden="true"></i>
+                            <span>Économique</span>
+                        </div>
+                        <div class="button-content">
+                            <i class="fa-solid fa-person" aria-hidden="true"></i>
+                            <span>Familial</span>
+                        </div>
+                        <div class="button-content">
+                            <i class="fa-xs fa-solid fa-heart" aria-hidden="true"></i>
+                            <span>Romantique</span>
+                        </div>
+                        <div class="button-content">
+                            <i class="fa-xs fa-solid fa-fire" aria-hidden="true"></i>
+                            <span>Nos pépites</span>
+                        </div>
                     </div>
                 </div>
                 <div class="infobar">
