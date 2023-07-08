@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -21,9 +21,11 @@
             <div class="logo-container">
                 <img src="images/logo/Booki.png" alt="Logo de Booki">
             </div>
-            <nav class="menu">
-                <li class="links-header selected"><a href="#hebergement">Hébergements</a></li>
-                <li class="links-header"><a href="#activites">Activités</a></li>
+            <nav>
+                <ul class="menu">
+                    <li class="links-header selected"><a href="#hebergement">Hébergements</a></li>
+                    <li class="links-header"><a href="#activites">Activités</a></li>
+                </ul>
             </nav>
         </header>
         <main>
@@ -32,35 +34,35 @@
                 <p class="research-and-filters-subtitle">En plein centre-ville ou en pleine nature</p>
                 <form class="only-desktop research">
                     <div class="research-icon">
-                        <i class="fa-solid fa-location-dot neutralLocation" aria-hidden="true"></i>
+                        <i class="fa-solid fa-location-dot neutralLocation t-18" aria-hidden="true"></i>
                     </div>
                     <input placeholder="Marseille, France">
                     <button>Rechercher</button>
                 </form>
                 <form class="only-mobile research">
                     <div class="research-icon">
-                        <i class="fa-solid fa-location-dot neutralLocation" aria-hidden="true"></i>
+                        <i class="fa-solid fa-location-dot neutralLocation t-18" aria-hidden="true"></i>
                     </div>
                     <input placeholder="Marseille, France">
-                    <button><i class="fa-solid fa-magnifying-glass white-glass"></i></button>
+                    <button><i class="fa-solid fa-magnifying-glass white-glass t-17"></i></button>
                 </form>
                 <div class="filters">
                     <p class="filters-title">Filtres</p>
                     <div class="filters-buttons">
                         <div class="button-content">
-                            <i class="fa-xs fa-solid fa-money-bill-wave" aria-hidden="true"></i>
+                            <i class="fa-xs fa-solid fa-money-bill-wave t-22" aria-hidden="true"></i>
                             <span>Économique</span>
                         </div>
                         <div class="button-content">
-                            <i class="fa-solid fa-person" aria-hidden="true"></i>
+                            <i class="fa-solid fa-person t-22" aria-hidden="true"></i>
                             <span>Familial</span>
                         </div>
                         <div class="button-content">
-                            <i class="fa-xs fa-solid fa-heart" aria-hidden="true"></i>
+                            <i class="fa-xs fa-solid fa-heart t-22" aria-hidden="true"></i>
                             <span>Romantique</span>
                         </div>
                         <div class="button-content">
-                            <i class="fa-xs fa-solid fa-fire" aria-hidden="true"></i>
+                            <i class="fa-xs fa-solid fa-fire t-22" aria-hidden="true"></i>
                             <span>Nos pépites</span>
                         </div>
                     </div>
@@ -270,19 +272,25 @@
         <footer class="booki-footer">
             <nav class="column-footer">
                 <h4 class="column-title">À propos</h4>
-                <li class="column-content"><a href="#">Fonctionnement du site</a></li>
-                <li class="column-content"><a href="#">Conditions générales</a></li>
-                <li class="column-content"><a href="#">Données et confidentialité</a></li>
+                <ul class="footer-list-container">
+                    <li class="column-content"><a href="#">Fonctionnement du site</a></li>
+                    <li class="column-content"><a href="#">Conditions générales</a></li>
+                    <li class="column-content"><a href="#">Données et confidentialité</a></li>
+                </ul>
             </nav>
             <nav class="column-footer">
                 <h4 class="column-title">Nos hébergements</h4>
-                <li class="column-content"><a href="#">Charte qualité</a></li>
-                <li class="column-content"><a href="#">Proposer votre hôtel</a></li>
+                <ul class="footer-list-container">
+                    <li class="column-content"><a href="#">Charte qualité</a></li>
+                    <li class="column-content"><a href="#">Proposer votre hôtel</a></li>
+                </ul>
             </nav>
             <nav class="column-footer">
                 <h4 class="column-title">Assistance</h4>
-                <li class="column-content"><a href="#">Centre d'aide</a></li>
-                <li class="column-content"><a href="#">Nous contacter</a></li>
+                <ul class="footer-list-container">
+                    <li class="column-content"><a href="#">Centre d'aide</a></li>
+                    <li class="column-content"><a href="#">Nous contacter</a></li>
+                </ul>
             </nav>
         </footer>
     </div>

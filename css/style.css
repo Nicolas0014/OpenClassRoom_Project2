@@ -60,6 +60,18 @@ body {
     color: black;
 }
 
+.t-22{
+    font-size: 22px;
+}
+
+.t-18{
+    font-size: 18px;
+}
+
+.t-17{
+    font-size: 17px;
+}
+
 .white-glass{
     color: white;
 }
@@ -418,11 +430,17 @@ body {
     width: 33%;
     display: flex;
     flex-direction: column;
-    gap: 15px;
 }
 
 .column-footer li{
     list-style-type: none;
+}
+
+.footer-list-container{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-left: 0;
 }
 
 .column-footer a{
